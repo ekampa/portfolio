@@ -9,6 +9,51 @@
     color: #008000;
 }
 
+
+/* Homepage & Statement call-to-actions */
+/* Outline button: shared base + light/dark variants */
+.btn-outline {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #ffffff;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 0px;
+    transition-duration: 0.4s;
+    min-height: 56px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: Lato, arial, sans-serif;
+    font-weight: 400;
+  }
+
+  .btn-outline--light {           /* white, over the homepage hero image */
+    color: #ffffff;
+    font-size: 16px;
+  }
+  .btn-outline--light:hover,
+  .btn-outline--light:focus-visible {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .btn-outline--dark {            /* dark, on white pages */
+    color: #212529;
+    border: 2px solid #212529;
+    font-size: 12px;
+    margin-top: 1rem;
+  }
+  .btn-outline--dark:hover,
+  .btn-outline--dark:focus-visible {
+    color: #212529;
+    background-color: rgba(33, 37, 41, 0.06);
+  }
+
+
 body {
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 3px;

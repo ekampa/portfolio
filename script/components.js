@@ -8,8 +8,10 @@
 //     <div id="site-footer"></div>
 //
 // The nav is injected immediately (this script runs synchronously right after
-// #site-nav), so it is in place before script.js looks up `.navbar`. The footer
-// is injected on DOMContentLoaded, once #site-footer has been parsed.
+// #site-nav), so it renders with the page instead of flashing in late. The
+// footer is injected on DOMContentLoaded, once #site-footer has been parsed.
+//
+// Mobile menu closes when the user taps outside the navbar.
 
 (function () {
     const NAV_LINKS = [
