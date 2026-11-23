@@ -6,7 +6,6 @@
 //     <script src="script/components.js"></script>
 //     ...page content...
 //     <div id="site-footer"></div>
-//     <script src="script/script.js"></script>
 //
 // The nav is injected immediately (this script runs synchronously right after
 // #site-nav), so it is in place before script.js looks up `.navbar`. The footer
@@ -88,5 +87,16 @@
     document.addEventListener('DOMContentLoaded', () => {
         const footerSlot = document.getElementById('site-footer');
         if (footerSlot) footerSlot.outerHTML = footerHTML;
+    });
+
+    // Close the mobile menu when the user taps anywhere outside the navbar
+    document.addEventListener('pointerdown', (event) => {
+        const menu = document.getElementById('navbarSupportedContent');
+        const menuIsOpen = menu && menu.classList.contains('show');
+        const tappedInsideNav = event.target.closest('.navbar');
+    
+        if (menuIsOpen && !tappedInsideNav) {
+        bootstrap.Collapse.getOrCreateInstance(menu).hide();
+        }
     });
 })();
