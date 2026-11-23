@@ -183,17 +183,6 @@ button:focus {outline:0;}
     font-family: Lato, arial, sans-serif;
 }
 
-.copyright {
-    font-size: 12px;
-    text-align: left;
-    line-height: 1.5;
-    color: rgb(89, 89, 89);
-    letter-spacing: 3px;
-    font-weight: 400;
-    overflow-wrap: break-word;
-    text-transform: uppercase;
-    font-family: Lato, arial, sans-serif;
-}
 
 /* spacing on all sections */
 #printmaking, #projects, #ceramics, #textures, #services, #portfolio, #contact, #footer {
@@ -256,44 +245,28 @@ button:focus {outline:0;}
     }
 }
 
-
-/* social media icons styling */
-.social-icons {
-    font-size: 36px;
-    cursor: pointer;
-}
-.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
-    color: #545754;
-}
-.fab {
-    color: #000000;
-    font-size: 20px;
-}
-.button {
-    /* background-color: #4CAF50; Green */
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-.button5 {
-    background-color: white;
-    color: black;
-    border: 2px solid #555555;
-}
-.button5:hover {
-background-color: #555555;
-color: white;
-}
-  
-/* footer styling */
-#footer {
-    background-color: #808080;
-    text-align: center;
-}
+/* Footer */
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;   /* stacks neatly on narrow phones */
+    gap: 0.5rem;
+  }
+  .site-footer__copyright {
+    margin: 0;
+    margin-top: 1.5rem;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: rgb(89, 89, 89);
+    text-align: left;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    text-transform: uppercase;
+    /* font-family: Lato, arial, sans-serif; */
+  }
+  .site-footer__social {
+    display: flex;
+    gap: 12px;
+  }

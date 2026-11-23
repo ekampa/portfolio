@@ -71,14 +71,10 @@
 
     const footerHTML = `
     <footer id="footer">
-        <div class="container-fluid">
-            <div class="social-icons mt-4 copyright">
-                <p style="margin: 0;">
-                    <span>Copyright © ${new Date().getFullYear()} Emily Kampa - All Rights Reserved.</span>
-                    <!-- social media icons -->
-                    <a href="https://www.instagram.com/stressyandlemonzesty/" target="_blank" style="float: right; font-size: 16px; color: rgb(89, 89, 89); padding-right: 5px;"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/emilykampa/" target="_blank" style="float: right; font-size: 16px; color: rgb(89, 89, 89); padding-right: 5px;"><i class="fab fa-linkedin"></i></a>
-                </p>
+        <div class="container-fluid site-footer">
+            <p class="site-footer__copyright">Copyright © ${new Date().getFullYear()} Emily Kampa - All Rights Reserved.</p>
+            <div class="site-footer__social">
+                <!-- your two <a class="social-link"> SVG links go here -->
             </div>
         </div>
     </footer>`;
