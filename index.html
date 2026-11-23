@@ -15,33 +15,10 @@
 </head>
 
 
-<body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark " style="position: absolute;">
-        <div class="container">
-            <span class="navbar-brand" style="font-size: 1.5rem;">Emily Kampa</span>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <!-- yellow color: style="color: #FEFF92;" or color: yellow; -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="artwork.html" style="color: #ffffff;">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="shop.html" style="color: #ffffff;">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="statement.html" style="color: #ffffff;">Statement</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html" style="color: #ffffff;">About</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body data-nav="overlay">
+    <!-- navbar: shared, see script/components.js -->
+    <div id="site-nav"></div>
+    <script src="script/components.js"></script>
 
 
     <!-- main banner -->
@@ -102,13 +79,27 @@
                 <!-- TILE 2 -->
                 <div class="col-lg-4 mt-4">
                   <p style="text-align: center; margin-top: 1rem;">Other artistic projects</p>
-                  <a class="nav-link" href="artwork.html#ceramics" style="padding: 0;">
+                  <a class="nav-link" href="artwork.html#projects" style="padding: 0;">
                     <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/TILE6.jpg" alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="images/TILE3.jpg" alt="Card image" style="width:100%">
                         <!-- TILE3 (seaweed zine), TILE6 (close up of roll), TILE8 (mushroom cup), TILE9 (barnacle) -->
                     </div>
                   </a>
                 </div>
+
+
+                <!-- TILE 2 -->
+                <!-- <div class="col-lg-4 mt-4">
+                  <p style="text-align: center; margin-top: 1rem;">Other artistic projects</p>
+                  <a class="nav-link" href="artwork.html#ceramics" style="padding: 0;">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/TILE3.jpg" alt="Card image" style="width:100%">
+                    </div>
+                  </a>
+                </div> -->
+                <!-- TILE3 (seaweed zine), TILE6 (close up of roll), TILE8 (mushroom cup), TILE9 (barnacle) -->
+
+                
 
                 <!-- TILE 3 -->
                 <div class="col-lg-4 mt-4">
@@ -126,19 +117,8 @@
     </section>
 
 
-    <!-- footer section-->
-    <footer id="footer">
-      <div class="container-fluid">
-          <div class="social-icons mt-4 copyright">
-              <p style="margin: 0;">
-                  <span>Copyright © 2022 Emily Kampa - All Rights Reserved.</span>
-                    <!-- social media icons -->
-                  <a href="https://www.instagram.com/stressyandlemonzesty/" target="_blank" style="float: right; font-size: 16px; color: rgb(89, 89, 89); padding-right: 5px;"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/emilykampa/" target="_blank" style="float: right; font-size: 16px; color: rgb(89, 89, 89); padding-right: 5px;"><i class="fab fa-linkedin"></i></a>
-              </p>
-          </div>
-      </div>
-    </footer>    
+    <!-- footer: shared, see script/components.js -->
+    <div id="site-footer"></div>
 
 
     <!-- load javascript after loading all html content -->
